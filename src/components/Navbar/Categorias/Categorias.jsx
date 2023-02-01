@@ -1,13 +1,14 @@
 export const Categorias = () => {
     return (
-        <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown link
+        <li className="nav-item dropdown">
+            <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Seguir viendo
             </a>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <ul className="dropdown-menu">
+                <li><a className="dropdown-item" href="#">Servicio</a></li>
+                <li><a className="dropdown-item" href="#">Caballo overo</a></li>
+                <li><a className="dropdown-item" href="#">Caballo tobiano</a></li>
+                <li><a className="dropdown-item" href="#">Caballo alazan</a></li>
             </ul>
         </li>
     );
