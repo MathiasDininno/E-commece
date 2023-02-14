@@ -1,7 +1,8 @@
+import { Link } from "react-router-dom";
 export const Secciones = () => {
     return (
         <li className="nav-item">
-            <button className="btn btn-dark">Menu</button>
+            <Link className="nav-link" to={'/'}><img className="logo" src="../img/Logo-Caballo.jpg"/></Link>
         </li>
     );
 }

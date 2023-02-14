@@ -1,0 +1,24 @@
+[
+    {
+        "infoRaza": "El caballo Bagual argentino puede ser considerado el equivalente al caballo Mustang americano. Tiene una alzada media de entre 140-150 cm y viven en estado salvaje en la patagonia entre Argentina y Chile.",
+        "id": 1,
+        "idCategoria": 1,
+        "nombreCategoria":"Bagual",
+        "raza":"Bagual",
+        "nombre":"Rayo",
+        "edad": 3,
+        "precio": 140000,
+        "stock": 20,
+        "img": "Bagual.jpg"
+    },
+    {
+        "id":2,
+        "idCategoria": 2,
+        "raza":"Tobiano",
+        "nombre":"Mancha",
+        "edad": 4,
+        "precio": 400000,
+        "stock": 6,
+        "img": "Bagual-acostado.jpg"
+    }
+]

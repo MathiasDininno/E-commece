@@ -9,7 +9,7 @@ export const Navbar = ({ nombre }) => {
           <span className="navbar-toggler-icon" />
         </button>
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul className="navbar-nav">
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <Secciones />
             <Categorias />
           </ul>
@@ -17,6 +17,5 @@ export const Navbar = ({ nombre }) => {
         </div>
       </div>
     </nav>
-
   );
 }
