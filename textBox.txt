@@ -1,0 +1,9 @@
+✅useState: Este hook es utilizado para mantener y actualizar el estado local de un componente. Se puede utilizar para guardar cualquier tipo de datos que necesite ser mantenido y actualizado a lo largo del tiempo, como inputs del formulario, estado de un toggle, etc.
+
+✅useEffect: Este hook es utilizado para realizar efectos secundarios en un componente, como solicitudes de API, manipulación del DOM, o suscripciones. Se ejecuta después de cada renderizado del componente.
+
+✅useContext: Este hook es utilizado para acceder y actualizar el contexto en un componente. Permite compartir datos entre componentes sin tener que pasar props manualmente a través de todos los componentes intermedios.
+
+✅useRef: Este hook es utilizado para crear una referencia a un elemento del DOM o cualquier otro valor que no cambie a lo largo del tiempo. Se puede utilizar para almacenar valores que necesitan ser accedidos fuera del ciclo de vida de React, como por ejemplo el tamaño de un elemento del DOM.
+
+✅useReducer: Este hook es similar al useState, pero se utiliza cuando el estado depende de más de un valor y las acciones de actualización son más complejas. Se utiliza para manejar estados que requieren más lógica de negocios, como la gestión de formularios o la gestión de estados de aplicaciones complejas.

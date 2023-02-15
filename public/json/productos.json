@@ -2,10 +2,8 @@
     {
         "infoRaza": "El caballo Bagual argentino puede ser considerado el equivalente al caballo Mustang americano. Tiene una alzada media de entre 140-150 cm y viven en estado salvaje en la patagonia entre Argentina y Chile.",
         "id": 1,
-        "idCategoria": 1,
-        "nombreCategoria":"Bagual",
+        "idCategoria": "caballo-bagual",
         "raza":"Bagual",
-        "nombre":"Rayo",
         "edad": 3,
         "precio": 140000,
         "stock": 20,
@@ -13,12 +11,47 @@
     },
     {
         "id":2,
-        "idCategoria": 2,
-        "raza":"Tobiano",
-        "nombre":"Mancha",
+        "idCategoria": "caballo-gateado",
+        "raza":"Gateado",
         "edad": 4,
         "precio": 400000,
         "stock": 6,
-        "img": "Bagual-acostado.jpg"
+        "img": "Gateado-Rosillo.jpg"
+    },
+    {
+        "id":3,
+        "idCategoria": "caballo-pinto",
+        "raza":"Pinto",
+        "edad": 4,
+        "precio": 400000,
+        "stock": 6,
+        "img": "Pinto.jpg"
+    },
+    {
+        "id":4,
+        "idCategoria": "caballo-pinto",
+        "raza":"Pinto",
+        "edad": 4,
+        "precio": 400000,
+        "stock": 6,
+        "img": "Pinto-dos.jpg"
+    },
+    {
+        "id":5,
+        "idCategoria": "caballo-alazan",
+        "raza":"Alazan",
+        "edad": 4,
+        "precio": 400000,
+        "stock": 6,
+        "img": "Polo.jpg"
+    },
+    {
+        "id":6,
+        "idCategoria": "caballo-alazan",
+        "raza":"Alazan",
+        "edad": 4,
+        "precio": 400000,
+        "stock": 6,
+        "img": "Polo-dos.jpg"
     }
 ]

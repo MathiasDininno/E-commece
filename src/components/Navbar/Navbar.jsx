@@ -1,7 +1,7 @@
 import { CartWidget } from "../CartWidget/CartWidget";
 import { Categorias } from "./Categorias/Categorias";
 import { Secciones } from "./Secciones/Secciones"
-export const Navbar = ({ nombre }) => {
+export const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg bg-light">
       <div className="container-fluid">
@@ -17,5 +17,5 @@ export const Navbar = ({ nombre }) => {
         </div>
       </div>
     </nav>
-  );
+  )
 }

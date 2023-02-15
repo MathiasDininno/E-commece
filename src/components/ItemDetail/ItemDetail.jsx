@@ -16,7 +16,6 @@ export const ItemDetail = ({prod}) => {
                 <div className="card-body">
                     <p className="card-text">Información: {prod.infoRaza}</p>
                     <p className="card-text">Raza: {prod.raza}</p>
-                    <p className="card-text">Nombre: {prod.nombre}</p>
                     <p className="card-text">Valor: {prod.precio}</p>
                     <p className="card-text">Stock: {prod.stock}</p>
                     <ItemCount valInicial={1} stock={prod.stock} onAdd={onAdd}/>

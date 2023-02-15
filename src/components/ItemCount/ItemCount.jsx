@@ -1,3 +1,4 @@
+import React from "react"
 import { useState } from "react"
 export const ItemCount = ({ valInicial, stock, onAdd }) => {
 
@@ -12,7 +13,7 @@ export const ItemCount = ({ valInicial, stock, onAdd }) => {
             <button className="btn btn-dark" onClick={() => restar() }>-</button>
             {contador}
             <button className="btn btn-dark" onClick={() => sumar() }>+</button>
-            <button className="btn btn-light" onClik={() => onAdd(contador)}>Agregar al carrito</button>
+            <button className="btn btn-light" onClick={() => onAdd(contador)}>Agregar al carrito</button>
         </div>
     );
 }  

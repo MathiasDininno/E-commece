@@ -7,17 +7,17 @@ export const ItemDetailContainer = () => {
     const {id} = useParams()
     const [producto, setProducto] = useState([])
 
-    useEffect(() =>{
+    useEffect(() => {
         consultarBDD('../json/productos.json').then(prods => {
             const prod = prods.find(item => item.id === parseInt(id))
             setProducto(prod)
-        })    
-    
-    }, [])
+        })
+
+    }, [id])
 
     return (
         <div className="card mb-3 container itemDetail">
-            <ItemDetail prod={producto}/>
+            <ItemDetail prod={producto} />
         </div>
     );
 }
