@@ -1,14 +1,19 @@
 import { useRef } from "react"
+import { useNavigate } from "react-router-dom"
+import { toast } from 'react-toastify';
 export const Checkout = () => {
-    
+    let navigate = useNavigate()
     const datosForm = useRef()
     const consultarForm = (e) =>{
         e.preventDefault()
         console.log(datosForm.current)
-        const data = new FormData(datosForm.current)
+        const data = new FormData(datosForm.current) // FormData <= de HTML a obk
         console.log(data)
-        const cliente = Object.fromEntries(data)
+        const cliente = Object.fromEntries(data) // Object.fromEntries <= trasforma obj en obj simple
         console.log(cliente)
+        e.target.reset()
+        toast.success('Muchas gracias por realizar su compra')
+        navigate("/")
     }
     
     return (
@@ -27,12 +32,12 @@ export const Checkout = () => {
                     <input type="number" className="form-control" name="dni"/>
                 </div>
                 <div className="mb-3">
-                    <label htmlFor="numero" className="form-label">Numero telefonico</label>
+                    <label htmlFor="celular" className="form-label">Numero telefonico</label>
                     <input type="number" className="form-control" name="celular"/>
                 </div>
                 <div className="mb-3">
-                    <label htmlFor="nombre" className="form-label">Nombre y Apellido</label>
-                    <input type="text" className="form-control" name="nombre"/>
+                    <label htmlFor="direccion" className="form-label">Dirección</label>
+                    <input type="text" className="form-control" name="direccion"/>
                 </div>
                 <button type="submit" className="">Finalizar compra</button>
             </form>

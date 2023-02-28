@@ -1,8 +1,9 @@
+import { Link } from "react-router-dom";
 import { ItemCount } from "../ItemCount/ItemCount";
 
 export const ItemDetail = ({prod}) => {
 
-    const onAdd = (cantidad) =>{
+    const onAdd = (cantidad) =>{ //Agregar al carrito
         console.log(cantidad)
         console.log(prod)
     }
@@ -16,10 +17,11 @@ export const ItemDetail = ({prod}) => {
                 <div className="card-body">
                     <p className="card-text">Información: {prod.infoRaza}</p>
                     <p className="card-text">Raza: {prod.raza}</p>
-                    <p className="card-text">Valor: {prod.precio}</p>
+                    <p className="card-text">Valor: ${prod.precio}</p>
+                    <p className="card-text">Edad: {prod.edad}</p>
                     <p className="card-text">Stock: {prod.stock}</p>
                     <ItemCount valInicial={1} stock={prod.stock} onAdd={onAdd}/>
-                    <button className="btn btn-dark">Finalizar Compra</button>
+                    <Link className="nav-link" to={'/cart'}><button className="btn btn-dark">Finalizar Compra</button></Link>
                 </div>
             </div>
         </div>

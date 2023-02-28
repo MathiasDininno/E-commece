@@ -7,3 +7,24 @@
 ✅useRef: Este hook es utilizado para crear una referencia a un elemento del DOM o cualquier otro valor que no cambie a lo largo del tiempo. Se puede utilizar para almacenar valores que necesitan ser accedidos fuera del ciclo de vida de React, como por ejemplo el tamaño de un elemento del DOM.
 
 ✅useReducer: Este hook es similar al useState, pero se utiliza cuando el estado depende de más de un valor y las acciones de actualización son más complejas. Se utiliza para manejar estados que requieren más lógica de negocios, como la gestión de formularios o la gestión de estados de aplicaciones complejas.
+
+✅Primer motodo de rendering <= Complejidad de 6
+
+const cond = true
+    if (cond) {
+        return <h2>Verdadero</h2>
+    }
+    
+   return <h2>Falso</h2>
+
+
+
+✅Segundo metodo de rendering <= Complejidad de 6
+        <>
+            {cond && <h2>Es verdadero</h2>}
+            {!cond && <h2>Es falso</h2>}
+        </>
+
+
+✅Tercer metodo de rendering <= conplejidad de 5
+{cond ? <h2>Es verdadero</h2> : <h2>Es falso</h2>}

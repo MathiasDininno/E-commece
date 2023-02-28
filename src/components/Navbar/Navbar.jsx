@@ -1,9 +1,15 @@
 import { CartWidget } from "../CartWidget/CartWidget";
 import { Categorias } from "./Categorias/Categorias";
 import { Secciones } from "./Secciones/Secciones"
+import { BotonDarkMode } from "../BotonDarkMode/BotonDarkMode";
+
+import { useDarkModeContext } from "../context/DarkModeContext";
 export const Navbar = () => {
+
+  const {darkMode} = useDarkModeContext()
+
   return (
-    <nav className="navbar navbar-expand-lg bg-light">
+    <nav className={`navbar navbar-expand-lg ${darkMode ? "bg-primary" : "navbar-light bg-light"}`}>
       <div className="container-fluid">
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon" />
@@ -14,6 +20,7 @@ export const Navbar = () => {
             <Categorias />
           </ul>
           <CartWidget cantidadCarrito={9} />
+          <BotonDarkMode/>
         </div>
       </div>
     </nav>
