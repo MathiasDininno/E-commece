@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -62,6 +64,15 @@ code {
   text-align: center;
 }
 
+.cardBodyDark:hover{
+  background-color: rgba(93, 69, 69, 0.73);
+}
+
+.cartWidget{
+  margin-right: 40px;
+  color: white;
+}
+
 .cardContainer{
   margin-top: 3%;
   margin-left: 26,5%;
@@ -73,10 +84,6 @@ code {
 
 .divButtons button{
   margin: 4px;
-}
-
-.cardBodyDark:hover{
-  background-color: rgba(93, 69, 69, 0.73);
 }
 
 img {
@@ -97,4 +104,26 @@ img {
 .darkMode {
   background-color: rgb(255, 255, 255);
   color: white;
+}
+
+.cardFooter{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 11px;
+  color: white;
+  background-color: rgb(125, 66, 66);
+}
+
+.bodyFooter{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 11px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(121, 57, 57);
 }

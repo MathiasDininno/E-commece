@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { consultarBDD } from "../../utils/funciones.js";
 
 import { ItemList } from "../ItemList/ItemList.jsx";
+import { getProductos } from "../../utils/firebase.js";
 
 import { useDarkModeContext } from "../context/DarkModeContext";
 
@@ -14,13 +15,13 @@ export const ItemListContainer = () => {
 
     useEffect(() => {
         if (idCategoria) { //undefined me da falso
-            consultarBDD('../json/productos.json').then(products => {
+            getProductos().then(products => {
                 const prods = products.filter(prod => prod.idCategoria === idCategoria)
                 const items = <ItemList prods={prods} plantilla="Item"/>
                 setProductos(items)
             })
         } else {
-            consultarBDD('./json/productos.json').then(prods => {
+            getProductos().then(prods => {
                 const items = <ItemList prods={prods} plantilla="Item"/>
                 setProductos(items)
             })

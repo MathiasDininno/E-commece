@@ -10,7 +10,7 @@ export const Item = ({ item }) => {
         <div className="card mb-3 cardProducto border-primary" style={{ maxWidth: '715px' }}>
             <div className="row g-0">
                 <div className="col-md-4">
-                    <img src={`/img/${item.img}`} className="card-img-top" alt={`imagen de ${item.nombre}`} />
+                    <img src={item.img} className="card-img-top" alt={`imagen de ${item.nombre}`} />
                 </div>
                 <div className="col-md-8">
                     <div className={`card-body ${darkMode ? 'cardBodyDark' : 'cardBody'}`}>

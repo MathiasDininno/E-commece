@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { consultarBDD } from "../../utils/funciones";
+import { getProducto } from "../../utils/firebase";
 import { ItemDetail } from "../ItemDetail/ItemDetail";
 
 export const ItemDetailContainer = () => {
@@ -8,12 +8,10 @@ export const ItemDetailContainer = () => {
     const [producto, setProducto] = useState([])
 
     useEffect(() => {
-        consultarBDD('../json/productos.json').then(prods => {
-            const prod = prods.find(item => item.id === parseInt(id))
+        getProducto(id).then(prod => {
             setProducto(prod)
         })
-
-    }, [id])
+    }, [])
 
     return (
         <div className="card mb-3 container itemDetail">
