@@ -8,6 +8,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  padding-bottom: 5em;
+  min-height: 100vh;
 }
 
 code {
@@ -46,7 +49,6 @@ code {
 .cardProducto {
   width: auto;
   height: auto;
-  margin: 4px;
 }
 
 .cardProducto:hover{
@@ -69,7 +71,7 @@ code {
 }
 
 .cartWidget{
-  margin-right: 40px;
+  margin-right: 25px;
   color: white;
 }
 
@@ -90,6 +92,21 @@ img {
   margin-top: 3px;
 }
 
+.imgDetail{
+  margin-top: 26px;
+  max-width: 158%;
+  height: auto;
+}
+
+.cardDetail{
+  width: 32%;
+  margin-left: 144px;
+}
+
+.cantCarrito{
+  color: blueviolet;
+}
+
 .itemDetail {
   max-width: 800px;
   margin-top: 20px;
@@ -107,23 +124,37 @@ img {
 }
 
 .cardFooter{
-  position: fixed;
-  left: 0;
-  bottom: 0;
   width: 100%;
+  position: absolute;
+  padding: 1em 0;
   text-align: center;
+  bottom: 0;
   font-size: 11px;
-  color: white;
-  background-color: rgb(125, 66, 66);
+  background-color: #888!important;
 }
 
 .bodyFooter{
-  position: fixed;
-  left: 0;
-  bottom: 0;
   width: 100%;
+  position: absolute;
+  padding: 1em 0;
   text-align: center;
+  bottom: 0;
   font-size: 11px;
-  color: rgb(255, 255, 255);
-  background-color: rgb(121, 57, 57);
+  background-color: rgba(var(--bs-primary-rgb))!important;
+}
+
+.h5Footer{
+  color: black;
+}
+
+@media (max-width: 767px){
+  .imgDetail{
+    margin-top: 26px;
+    max-width: 100%;
+    height: auto;
+  }
+  .cardDetail{
+    width: 80%;
+    margin-left: 20%;
+  }
 }

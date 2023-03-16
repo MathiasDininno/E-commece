@@ -55,7 +55,7 @@ export const CarritoProvider = (props) => {
     }
 
     const totalPrice = () => {
-        return carrito.reduce((acum, prod) => acum += (prod.cant * prod.precio))
+        return carrito.reduce((acum, prod) => acum += (prod.cant * prod.precio), 0)
     }
 
     console.log(carrito)

@@ -10,7 +10,7 @@ import { DarkModeProvider } from './context/DarkModeContext';
 import { CarritoProvider } from './context/CarritoContext';
 
 // Firebase
-import { updateProducto } from '../utils/firebase';
+
 
 //Toastify
 import { ToastContainer } from 'react-toastify';
@@ -23,7 +23,7 @@ import { Cart } from './Cart/Cart';
 import { Footer } from './Footer/Footer';
 
 export const App = () => {
-  updateProducto()
+  
   return (
     <>
       <BrowserRouter>

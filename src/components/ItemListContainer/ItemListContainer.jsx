@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { consultarBDD } from "../../utils/funciones.js";
 
 import { ItemList } from "../ItemList/ItemList.jsx";
 import { getProductos } from "../../utils/firebase.js";
@@ -16,12 +15,14 @@ export const ItemListContainer = () => {
     useEffect(() => {
         if (idCategoria) { //undefined me da falso
             getProductos().then(products => {
-                const prods = products.filter(prod => prod.idCategoria === idCategoria)
+                const prods = products.filter(prod => prod.stock > 0).filter(prod => prod.categoria === idCategoria)
                 const items = <ItemList prods={prods} plantilla="Item"/>
                 setProductos(items)
+                console.log(idCategoria)
             })
         } else {
-            getProductos().then(prods => {
+            getProductos().then(products => {
+                const prods = products.filter(prod => prod.stock > 0)
                 const items = <ItemList prods={prods} plantilla="Item"/>
                 setProductos(items)
             })
